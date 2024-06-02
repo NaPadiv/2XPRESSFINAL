@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  background: linear-gradient(347deg, #163fd9, #000000);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 40s ease infinite;
+  -moz-animation: AnimationName 40s ease infinite;
+  animation: AnimationName 40s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #ccc;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;  
+}
+
+.container {
+  width: 80vw;
+  height: 90vh;
+  background-color: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(19px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+}
+
+.loading{
+  padding: 50px;
+  font-size: 36px;
+  border-radius: 10px;
+  background-color: rgba(17, 25, 40, 0.9);
+}
